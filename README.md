@@ -127,7 +127,8 @@ Mineflayer installation.  [Mineflayer] (https://github.com/PrismarineJS/mineflay
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-Take into consideration how examples are normalized. You need to  
+Take into consideration how examples are normalized. Being able to run  
+said example without modifying them. You need to  
 remember all the arguments in order to run the script module.  
 This can be annoying if you need to re-run your script and can't hold  
 your brain to retain all the arguments needed to run a mineflayer  
