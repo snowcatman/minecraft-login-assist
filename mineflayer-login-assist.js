@@ -11,7 +11,7 @@ var childProcess = require('child_process');
 let ScriptName = module.filename.slice(__filename.lastIndexOf(path.sep)+1, 
 	module.filename.length -3); 
 
-if (process.argv.length < 2 || process.argv.length > 4) {
+if (process.argv.length < 3 || process.argv.length > 4) {
   console.log(`Usage : Node ${ScriptName}.js <filename> <online/offline>`)
 	console.log(`	EG : C:\\myfolder>node startjs your-filename.js offline`)
   process.exit(1)
