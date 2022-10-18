@@ -127,6 +127,11 @@ Mineflayer installation.  [Mineflayer] (https://github.com/PrismarineJS/mineflay
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+Take into consideration how examples are normalized. You need to  
+remember all the arguments in order to run the script module.  
+This can be annoying if you need to re-run your script and can't hold  
+your brain to retain all the arguments needed to run a mineflayer  
+nodejs module/script.  
 
 1. Usage: Node mineflayer-login-assist.js filename online/offline.
 2. EG: C:\\myfolder>node mineflayer-login-assist.js your-node-js_filename.js online || offline.
