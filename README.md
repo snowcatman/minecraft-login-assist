@@ -135,7 +135,7 @@ your brain to retain all the arguments needed to run a mineflayer
 nodejs module/script.  
 
 1. Usage: Node mineflayer-login-assist.js filename online/offline.
-2. EG: C:\\myfolder>node <font color="gray">mineflayer-login-assist.js</font> your-node-js_filename.js online || offline.
+2. EG: C:\\myfolder>node <font color="white">mineflayer-login-assist.js</font> your-node-js_filename.js online || offline.
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
