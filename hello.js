@@ -1,0 +1,10 @@
+console.log("Start")
+console.log(process.argv[0]);
+console.log(process.argv[1]);
+console.log(process.argv[2]);
+console.log(process.argv[3]);
+console.log(process.argv[4]);
+console.log(process.argv[5]);
+console.log(process.argv[6]);
+console.log(process.argv[7]);
+console.log("Stop")
