@@ -29,35 +29,48 @@ async function dirOnline() {
 	let ports = (on_line.port);
 	let usernamee = (on_line.username);
 	let passwords = (on_line.password);
-	dirOnline1 = childProcess.exec(`node ${file} ${ports} ${hostt} ${usernamee} ${passwords}`, function (error, stdout, stderr) {
-	if (error) {
-		console.log(error.stack);
-		console.log('Error code: '+error.code);
-		console.log('Signal received: '+error.signal);
-	  }    
-		console.log('Child Process STDOUT: '+stdout);
-		console.log('Child Process STDERR: '+stderr);	
-	})
+	let authh = (on_line.auth)
+	
+	const dirOnline1 = childProcess.spawn(`node`, [file, hostt, ports, usernamee, passwords, authh]);
+
+	dirOnline1.stdout.on('data', (data) => {
+		console.log(`stdout: ${data}`);
+	});
+	
+	dirOnline1.stderr.on('data', (data) => {
+		console.log(`stderr: ${data}`);
+	});
+
+	dirOnline1.on('error', (error) => {
+		console.log(`error: ${error.message}`)
+	});
+
 	dirOnline1.on('exit', async function (code) {   
-		await console.log('Child process exited with exit code '+code);
+		console.log(`Child process exited with exit code ${code}`);
 	});
 };
 
 async function dirOffline() {
 	let hostt = (off_line.host);
-  let ports = (off_line.port);
+  	let ports = (off_line.port);
 	let usernamee = (off_line.username);
-	dirOffline1 = childProcess.exec(`node ${file} ${hostt} ${ports} ${usernamee}`, function (error, stdout, stderr) {
-		if (error) {
-		console.log(error.stack);
-		console.log('Error code: '+error.code);
-		console.log('Signal received: '+error.signal);
-	  }    
-		console.log('Child Process STDOUT: '+stdout);
-		console.log('Child Process STDERR: '+stderr);
-	})
+
+	const dirOffline1 = childProcess.spawn(`node`, [file, hostt, ports, usernamee]);
+
+	dirOffline1.stdout.on('data', (data) => {
+		console.log(`stdout: ${data}`);
+	});
+	
+	dirOffline1.stderr.on('data', (data) => {
+		console.log(`stderr: ${data}`);
+	});
+
+	dirOffline1.on('error', (error) => {
+		console.log(`error: ${error.message}`)
+	});
+
 	dirOffline1.on('exit', async function (code) {   
-		await console.log('Child process exited with exit code '+code);
+		console.log(`Child process exited with exit code ${code}`);
 	});
 };
 

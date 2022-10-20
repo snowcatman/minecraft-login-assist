@@ -137,6 +137,8 @@ nodejs module/script.
 1. Usage: Node mineflayer-login-assist.js filename online/offline.
 2. EG: C:\\myfolder>node <font color="gray">mineflayer-login-assist.js</font> your-node-js_filename.js online || offline.
 
+$\color[gray]{0.3} hello$
+
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- ROADMAP 
