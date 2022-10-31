@@ -112,7 +112,8 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 ## Getting Started
 
 You do not have to have Mineflayer installed to run this module/script/code or what ever.  
-However, it is meant for mineflayer so it would be a good idea to install that as well.
+However, it is meant for mineflayer so it would be a good idea to install that as well. 
+Esle it will not work
 
 ### Prerequisites
 
@@ -130,9 +131,10 @@ Mineflayer installation.  [Mineflayer] (https://github.com/PrismarineJS/mineflay
 Take into consideration how examples are normalized. Being able to run  
 said example without modifying them. You need to  
 remember all the arguments in order to run the script module.  
-This can be annoying if you need to re-run your script and can't hold  
+This can be annoying if you need to re-run your script and can't hold in 
 your brain to retain all the arguments needed to run a mineflayer  
-nodejs module/script.  
+nodejs module/script. Especially if you have alternitive account and 
+passwords you can't possibly memorize.
 
 1. Usage: Node mineflayer-login-assist.js filename online/offline.
 2. EG: C:\\myfolder>node $\color[gray]{0.3} mineflayer-login-assist.js$  $\color[gray]{0.7} your-node-js_filename.js$ online || offline.
