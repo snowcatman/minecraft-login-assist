@@ -128,7 +128,7 @@ module.exports = {
 		"username":"email@address.com",
 		"password":"password",
 		"port":"25565",
-		"version":"1.16.4,
+		"version":"1.16.3,
 		}
 	AnyExampleOnllineName:{
 		"host":"localhost",
@@ -142,4 +142,23 @@ module.exports = {
 		etc
 	}
 }
+
+	if you look in node_modules\mineflayer\lib\loader.js
+	you will fine this:
+
+		options.username = options.username ?? 'Player'
+		options.version = options.version ?? false
+		options.plugins = options.plugins ?? {}
+		options.hideErrors = options.hideErrors ?? false
+		options.logErrors = options.logErrors ?? true
+		options.loadInternalPlugins = options.loadInternalPlugins ?? true
+		options.client = options.client ?? null
+		options.brand = options.brand ?? 'vanilla'
+
+	ATM: you will find that the examples are not very consistant. especially when it comes to how here started. 
+	Not all the login option info is needed nor is the documentation on the examples use consistant ether. 
+	witch makes it hard to create a lazy auto nodjs script mineflayer script api starter. 
+	Not to mention that some examples a version spicific. 
+	Take for instance the anvil saver.js example. It only works with a few versions such as 1.16,3
+
 */
